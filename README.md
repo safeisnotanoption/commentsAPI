@@ -17,8 +17,12 @@ python manage.py runserver
 ```
 
 # Методы API
-**articles/** - получить список статей/добавить статью
-**articles/<int:pk>/** - получить определённую статью по id
-**articles/<int:article_id>/comments/** - получить все комментарии к статье вплоть до 3 уровня вложенности/добавить комментарий к статье
-**articles/<int:article_id>/comments/<int:pk>/** - получить определённый комментарий по id
-**articles/<int:article_id>/comments/<int:pk>/get_children** - получить все вложенные комментарии для комментария 3 уровня.
+`articles/` - получить список статей/добавить статью
+
+`articles/<article_id>/` - получить определенную статью по id
+
+`articles/<article_id>/comments/` - получить все комментарии к статье вплоть до 3 уровня вложенности/добавить комментарий к статье
+
+`articles/<article_id>/comments/<comment_id>/` - получить определенный комментарий по id
+
+`articles/<article_id>/comments/<comment_id>/get_children` - получить все вложенные комментарии для комментария 3 уровня.
